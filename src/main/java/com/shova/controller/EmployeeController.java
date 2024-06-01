@@ -16,7 +16,7 @@ public class EmployeeController {
         Session session = factory.openSession();
 //        findEmployeeByName();
         findEmployeeById();
-       // ShowOfficeCodesAsDepartment();
+       // showOfficeCodesAsDepartment();
 
         factory.close();
         session.close();
@@ -54,7 +54,7 @@ public class EmployeeController {
         session.close();
     }
 
-    public static void ShowOfficeCodesAsDepartment() {
+    public static void showOfficeCodesAsDepartment() {
         SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
 //     Hibernate Named Query
